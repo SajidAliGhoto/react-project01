@@ -46,6 +46,7 @@ body {
     width: 100vw;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 .product-list {
     display: flex;
@@ -214,7 +215,12 @@ body {
   .product-button:hover {
     background-color: #45a049;
   }
-  
+.product-button:disabled {
+    background-color: gray;
+    color: white;
+    opacity: 0.6; /* Optional: Makes the button look visually distinct */
+}
+
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
   }
